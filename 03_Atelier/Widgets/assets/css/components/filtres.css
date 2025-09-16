@@ -1,0 +1,20 @@
+.filtres {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: var(--espace-md);
+
+    & .filtre {
+        display: flex;
+        gap: 0.5rem;
+        background-color: var(--couleur-accent);
+        color: var(--couleur-texte);
+        padding: var(--espace-md);
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: color-mix(in oklab, var(--couleur-accent) 20%, var(--couleur-secondaire));
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@import url("./base/reset.css");
+@import url("./base/variables.css");
+@import url("./base/typographie.css");
+
+@import url("./components/filtres.css");
+@import url("./components/images.css");
+@import url("./components/favoris.css");
+@import url("./components/widget.css");
+@import url("./components/youtube.css");
+@import url("./components/minuterie.css");
+@import url("./components/degrade.css");
+
+@import url("./layout/principal.css");
+@import url("./layout/grille.css");

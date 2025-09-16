@@ -1,0 +1,42 @@
+[data-videos-youtube] {
+    display: flex;
+    flex-wrap: wrap;
+
+    .video {
+        display: flex;
+        justify-content: space-between;
+        padding: var(--espace-sm);
+        gap: var(--espace-md);
+        flex-basis: 50%;
+
+        &__infos {
+            margin-bottom: 1rem;
+
+            .video__titre {
+                font-size: 1.25rem;
+                margin: 0;
+            }
+
+            .video__chaine {
+                font-size: 1rem;
+                margin: 0;
+                color: #555;
+            }
+        }
+
+        &__cadre {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+
+            .video__iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+        }
+    }
+}

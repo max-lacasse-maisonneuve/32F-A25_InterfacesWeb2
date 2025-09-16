@@ -1,0 +1,1026 @@
+[
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 5,
+		"ADRESSE" : "505 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.44278,
+		"LATITUDE" : 45.74151,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4427778941, 45.7415138331 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 6,
+		"ADRESSE" : "510 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud à l'ouest de Laurier",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.4464,
+		"LATITUDE" : 45.74625,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4463960513, 45.7462503588 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 12,
+		"ADRESSE" : "301 J.-A.-Paré",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté ouest",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.47768,
+		"LATITUDE" : 45.76788,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4776815476, 45.7678814157 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 13,
+		"ADRESSE" : "663 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord à l'est de Prud'Homme",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.4273,
+		"LATITUDE" : 45.75767,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4273008243, 45.7576692203 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 15,
+		"ADRESSE" : "907 Basile-Routhier",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord, Valmont (315)/ Basile-Routhier",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.44588,
+		"LATITUDE" : 45.76836,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4458777486, 45.7683619119 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 21,
+		"ADRESSE" : "35 Lacombe",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.485,
+		"LATITUDE" : 45.7328,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4850019384, 45.732797119 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 26,
+		"ADRESSE" : "1124 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud, Noiseux / Iberville",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.41764,
+		"LATITUDE" : 45.77773,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4176448611, 45.7777274204 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 27,
+		"ADRESSE" : "920 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud, Beauchesne / Iberville",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.42363,
+		"LATITUDE" : 45.77118,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4236261354, 45.7711753426 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 29,
+		"ADRESSE" : "1429 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord-est, Jacques-Plante / Iberville",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.40882,
+		"LATITUDE" : 45.78783,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4088173919, 45.7878324973 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 30,
+		"ADRESSE" : "663 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord à l'Ouest de Lefrançois",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.43147,
+		"LATITUDE" : 45.75284,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4314747187, 45.7528369407 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 31,
+		"ADRESSE" : "626 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud à l'ouest d'Industriel",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.4402,
+		"LATITUDE" : 45.75305,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4402029229, 45.7530452355 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 1,
+		"ADRESSE" : "358 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud, Marina",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45346,
+		"LATITUDE" : 45.73248,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4534558854, 45.7324804409 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 37,
+		"ADRESSE" : "579 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord à l'est de Ritchot",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.43701,
+		"LATITUDE" : 45.74666,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4370096388, 45.7466571878 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 3,
+		"ADRESSE" : "313 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord à l'ouest de Cherrier",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45637,
+		"LATITUDE" : 45.72966,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4563693891, 45.7296584509 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 4,
+		"ADRESSE" : "287 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord à l'est de d'Argenson, chalet parc St-Laurent",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45761,
+		"LATITUDE" : 45.72729,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4576133573, 45.7272885287 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 123,
+		"ADRESSE" : "347 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45381,
+		"LATITUDE" : 45.7325,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4538057651, 45.7324971484 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 40,
+		"ADRESSE" : "85 Brien",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté est, Pharmaprix",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45246,
+		"LATITUDE" : 45.7434,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4524617379, 45.7434002313 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 44,
+		"ADRESSE" : "784 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.43105,
+		"LATITUDE" : 45.76344,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4310533244, 45.7634378862 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 48,
+		"ADRESSE" : "780 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud, Valmont / Iberville",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.43114,
+		"LATITUDE" : 45.76297,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4311394347, 45.7629719658 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 49,
+		"ADRESSE" : "193 Lacombe",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.47965,
+		"LATITUDE" : 45.74432,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4796479954, 45.744315282 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 50,
+		"ADRESSE" : "55 Lacombe",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord, gare du train",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.48345,
+		"LATITUDE" : 45.73596,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4834486341, 45.7359618666 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 46,
+		"ADRESSE" : "619 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord à l'est d'Industriel",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.44016,
+		"LATITUDE" : 45.75346,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4401615024, 45.7534588183 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 54,
+		"ADRESSE" : "424 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.44782,
+		"LATITUDE" : 45.73755,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4478168265, 45.7375516211 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 71,
+		"ADRESSE" : "1133 Basile-Routhier",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord à l'est des Champs-Élysés",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.43953,
+		"LATITUDE" : 45.7763,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4395318157, 45.7762954752 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 76,
+		"ADRESSE" : "447 St-Paul",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté est",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.48865,
+		"LATITUDE" : 45.76155,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4886480852, 45.7615547753 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 72,
+		"ADRESSE" : "586 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud-ouest, Montcalm / Iberville",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.44336,
+		"LATITUDE" : 45.74958,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4433582478, 45.7495848177 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 32,
+		"ADRESSE" : "765 Basile-Routhier",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord-ouest",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45405,
+		"LATITUDE" : 45.75955,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4540523564, 45.7595465571 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 80,
+		"ADRESSE" : "125 Lafayette",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud, centre d'échange terminus Repentigny",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45355,
+		"LATITUDE" : 45.74684,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4535502029, 45.7468431475 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 28,
+		"ADRESSE" : "1440 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud, Jacques-Plante / Iberville CHSLD Emile-McDuff",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.40806,
+		"LATITUDE" : 45.7882,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4080610438, 45.7882014752 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 85,
+		"ADRESSE" : "1351 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord, Jacques-Cousteau / Iberville",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.41099,
+		"LATITUDE" : 45.78543,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4109934039, 45.7854327912 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 86,
+		"ADRESSE" : "250 Louis-Philippe-Picard",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté ouest, École Félix-Leclerc",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.41092,
+		"LATITUDE" : 45.79148,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4109213136, 45.791480032 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 35,
+		"ADRESSE" : "82 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.47436,
+		"LATITUDE" : 45.71463,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4743571061, 45.7146251998 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 39,
+		"ADRESSE" : "10 Brien",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté ouest, Brien / Notre-Dame",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.44567,
+		"LATITUDE" : 45.74016,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4456658637, 45.7401596213 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 22,
+		"ADRESSE" : "269 Lacombe",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord-ouest",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.47567,
+		"LATITUDE" : 45.74709,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4756717975, 45.7470935944 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 36,
+		"ADRESSE" : "1301 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord-est, Verdier / Notre-Dame",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.40468,
+		"LATITUDE" : 45.77999,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4046849809, 45.779985717 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 106,
+		"ADRESSE" : "86 Brien",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté ouest",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45361,
+		"LATITUDE" : 45.7436,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4536073942, 45.7435962591 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 129,
+		"ADRESSE" : "140 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.47141,
+		"LATITUDE" : 45.71635,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4714134542, 45.7163510645 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 10,
+		"ADRESSE" : "533 Lacombe",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud-est, Village / Lacombe",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.46329,
+		"LATITUDE" : 45.75601,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4632860804, 45.7560104225 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 11,
+		"ADRESSE" : "457 Lacombe",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.46915,
+		"LATITUDE" : 45.75406,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4691467547, 45.7540631034 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 14,
+		"ADRESSE" : "742 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté ouest devant JBM, 2 poubelles (collées à la piste cyclable)",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.43394,
+		"LATITUDE" : 45.76028,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4339366517, 45.7602830957 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 16,
+		"ADRESSE" : "662 Lacombe",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord-ouest, Jordan / Le Bourg-Neuf",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45216,
+		"LATITUDE" : 45.77004,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4521649388, 45.7700376314 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 122,
+		"ADRESSE" : "39 de l'Église",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45729,
+		"LATITUDE" : 45.74131,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4572911038, 45.7413127919 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 41,
+		"ADRESSE" : "1187 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.41623,
+		"LATITUDE" : 45.77971,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4162346261, 45.7797050983 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 42,
+		"ADRESSE" : "1135 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord, Noiseux / Iberville",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.41773,
+		"LATITUDE" : 45.77807,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4177293723, 45.7780656017 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 43,
+		"ADRESSE" : "927 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord, Beauchesne / Iberville",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.42366,
+		"LATITUDE" : 45.77157,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4236578773, 45.7715730244 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 45,
+		"ADRESSE" : "685 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.43704,
+		"LATITUDE" : 45.75687,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4370439611, 45.756874483 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 47,
+		"ADRESSE" : "515 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord à l'est de Laurier",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.44645,
+		"LATITUDE" : 45.74655,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4464526586, 45.7465534224 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 124,
+		"ADRESSE" : "567 Pierre-Le Gardeur",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.48676,
+		"LATITUDE" : 45.73335,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4867587196, 45.7333538287 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 60,
+		"ADRESSE" : "649 Lacombe",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45244,
+		"LATITUDE" : 45.76873,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4524425743, 45.7687316692 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 61,
+		"ADRESSE" : "318 St-Paul",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté ouest",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.48102,
+		"LATITUDE" : 45.75754,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4810206931, 45.7575375549 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 62,
+		"ADRESSE" : "436 St-Paul",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté ouest",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.48671,
+		"LATITUDE" : 45.76035,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4867146452, 45.7603545411 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 63,
+		"ADRESSE" : "344 St-Paul",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté ouest",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.48399,
+		"LATITUDE" : 45.75903,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4839917282, 45.7590279552 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 125,
+		"ADRESSE" : "535 Lacombe",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.46282,
+		"LATITUDE" : 45.75654,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4628178941, 45.7565385814 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 73,
+		"ADRESSE" : "75 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord à l'est de Notre-Dame-des-Champ",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.47456,
+		"LATITUDE" : 45.71488,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4745644956, 45.7148841925 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 25,
+		"ADRESSE" : "1296 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.4128,
+		"LATITUDE" : 45.78345,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4128037892, 45.783452784 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 126,
+		"ADRESSE" : "579 Lacombe",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45859,
+		"LATITUDE" : 45.76201,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4585885286, 45.7620095573 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 127,
+		"ADRESSE" : "582 Lacombe",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté sud",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45826,
+		"LATITUDE" : 45.76208,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4582603222, 45.7620849312 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 84,
+		"ADRESSE" : "415 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord-est, Aubert / Iberville ",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45229,
+		"LATITUDE" : 45.74016,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4522867423, 45.740156598 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 83,
+		"ADRESSE" : "334 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord-est, Aqueduc / Iberville ",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.45768,
+		"LATITUDE" : 45.73424,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4576792543, 45.7342447919 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 9,
+		"ADRESSE" : "555 Lacombe",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.4611,
+		"LATITUDE" : 45.75847,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.46109505, 45.7584733719 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 2,
+		"ADRESSE" : "305 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord-est, Épicerie Métro",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.46038,
+		"LATITUDE" : 45.73128,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4603828119, 45.7312769571 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 91,
+		"ADRESSE" : "182 Iberville",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Iberville direction ouest",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.4705,
+		"LATITUDE" : 45.7197,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4704966514, 45.7196957032 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 20,
+		"ADRESSE" : "141 Notre-Dame",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté nord à l'est de Claude-David, Place Repentigny",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.471,
+		"LATITUDE" : 45.71688,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4710037326, 45.71688146 ]
+		}
+	},
+	{
+		"json_featuretype" : "Abribus",
+		"ID" : 128,
+		"ADRESSE" : "106 Claude-David ",
+		"MUNICIPALITE" : "Repentigny",
+		"EMPLACEMENT" : "Côté ouest",
+		"DATE_MODIFICATION" : "2025-05-21",
+		"LONGITUDE" : -73.47167,
+		"LATITUDE" : 45.71692,
+		"GEOM" : "Point",
+		"json_ogc_wkt_crs" : "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]",
+		"json_geometry" : {
+			"type" : "Point",
+			"coordinates" : [ -73.4716723807, 45.7169223857 ]
+		}
+	}
+]
