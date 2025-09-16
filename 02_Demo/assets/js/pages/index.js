@@ -1,4 +1,5 @@
 import Carrousel from "../composants/Carrousel.js";
+import Bouton from "../composants/Bouton.js";
 console.log(this);
 
 // Variables globales
@@ -16,6 +17,8 @@ function initialiser() {
     "Photo3.webp",
     "Photo4.webp",
   ]);
+  new Bouton(mainHTML, "Allo");
+  new Bouton(mainHTML, "Cliquez-moi");
 }
 // Exécution
 initialiser();
