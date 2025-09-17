@@ -18,7 +18,10 @@ function initialiser() {
     // const carrousel = new Carrousel(mainHTML, ["Photo1.webp", "Photo2.webp", "Photo3.webp", "Photo4.webp"]);
     // new Bouton(mainHTML, "Allo");
     // new Bouton(mainHTML, "Cliquez-moi");
-    // new Toast(mainHTML, "Message de toast");
+    const toast = new Toast(mainHTML, "Message de toast");
+    toast.message = "Patate";
+    console.log(toast.message);
+
     // new Youtube(
     //     conteneurYoutube,
     //     "-22uczx3Tb4",
@@ -26,10 +29,10 @@ function initialiser() {
     //     "Grafikart.fr"
     // );
 
-    tableauVideosYouTube.forEach(function (elementVideo) {
-        const video = new Youtube(conteneurYoutube, elementVideo.id, elementVideo.titre, elementVideo.chaineYouTube);
-        console.log(video);
-    });
+    // tableauVideosYouTube.forEach(function (elementVideo) {
+    //     const video = new Youtube(conteneurYoutube, elementVideo.id, elementVideo.titre, elementVideo.chaineYouTube);
+    //     // console.log(video);
+    // });
 }
 // Exécution
 initialiser();
