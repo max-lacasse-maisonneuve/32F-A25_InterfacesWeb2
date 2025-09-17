@@ -4,7 +4,7 @@
 
 Lors du design d'un site de ressources Web, vous avez la tâche de créer une liste de visionnement Youtube en utilisant Javascript.
 
-Normalement, nous utiliserons les données depuis un tableau d’objets littéraux statique dans le fichier youTubeVideos.js (dossier data).
+Normalement, nous utiliserons les données depuis un tableau d’objets dans le fichier youTubeVideos.js (dossier data).
 
 L’exercice consiste à injecter un composant affichant le titre, la chaîne et la vidéo [via l’API Share > Embed de YouTube](https://developers.google.com/youtube/player_parameters?hl=fr#Manual_IFrame_Embeds) à partir de ce tableau en utilisant la programmation orientée objet.
 
