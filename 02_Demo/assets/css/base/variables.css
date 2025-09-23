@@ -17,4 +17,6 @@
     --couleur-accent: #007bff;
     --couleur-favoris: #e74a93;
     --couleur-texte: #fff;
+    --couleur-succes: rgb(49, 167, 92);
+    --couleur-erreur: rgb(167, 49, 49);
 }

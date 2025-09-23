@@ -13,6 +13,14 @@
     left: 0;
     right: 0;
 
+    &.succes {
+        background-color: var(--couleur-succes);
+    }
+
+    &.erreur {
+        background-color: var(--couleur-erreur);
+    }
+
     @media (min-width: 500px) {
         padding: var(--espace-sm);
     }

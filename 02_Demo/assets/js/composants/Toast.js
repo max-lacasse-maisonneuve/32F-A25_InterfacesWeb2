@@ -1,13 +1,9 @@
 class Toast {
-    #conteneurHTML;
-    #elementHTML;
-    #message;
-
     constructor(conteneurHTML, message) {
-        this.#conteneurHTML = conteneurHTML;
-        this.#elementHTML;
-        this.#message = message;
-        this.#injecterHTML();
+        this._conteneurHTML = conteneurHTML;
+        this._elementHTML;
+        this._message = message;
+        this.injecterHTML();
     }
 
     set message(nouveauMessage) {
@@ -16,28 +12,28 @@ class Toast {
 
             return;
         }
-        this.#message = nouveauMessage.toLowerCase();
+        this._message = nouveauMessage.toLowerCase();
     }
 
     get message() {
-        return this.#message;
+        return this._message;
     }
 
     afficher() {}
 
     cacher() {
-        if (this.#elementHTML != null) {
-            this.#elementHTML.remove();
+        if (this._elementHTML != null) {
+            this._elementHTML.remove();
         }
     }
 
-    #injecterHTML() {
-        const gabarit = `<div class="toast" data-toast>${this.#message}</div>`;
+    injecterHTML() {
+        const gabarit = `<div class="toast" data-toast>${this._message}</div>`;
 
-        this.#conteneurHTML.insertAdjacentHTML("beforeend", gabarit);
-        this.#elementHTML = this.#conteneurHTML.lastElementChild;
+        this._conteneurHTML.insertAdjacentHTML("beforeend", gabarit);
+        this._elementHTML = this._conteneurHTML.lastElementChild;
 
-        this.#elementHTML.addEventListener("click", this.cacher.bind(this));
+        this._elementHTML.addEventListener("click", this.cacher.bind(this));
         setTimeout(this.cacher.bind(this), 5000);
     }
 }
