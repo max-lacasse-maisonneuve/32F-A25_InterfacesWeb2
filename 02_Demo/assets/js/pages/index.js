@@ -18,7 +18,6 @@ const conteneurYoutube = document.querySelector("[data-videos-youtube]");
 // Fonctions
 function initialiser() {
     const toast = new ToastErreur(mainHTML, "Message de toast", test);
-    // toast.debug();
 }
 
 function test() {

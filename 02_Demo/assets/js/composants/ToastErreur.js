@@ -3,7 +3,6 @@ import Toast from "./Toast.js";
 class ToastErreur extends Toast {
     constructor(conteneurHTML, message, fctRappel) {
         super(conteneurHTML, message);
-        debugger;
         this.fctRappel = fctRappel;
         this.fctRappel();
         this.debug();

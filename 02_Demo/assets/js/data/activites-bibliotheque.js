@@ -1,4 +1,4 @@
-[
+const infos = [
     {
         "description-complete": "Tout savoir sur la collecte des matières organiques",
         "remarque": "Présenté par Julie Duhamel-Gingras, coordonnatrice à l’environnement à la Ville de Laval  Faites-vous partie des recrues 2017 de l’équipe des Bruns? La Ville de Laval s’est engagée à offrir la collecte des matières compostables à tous les bâtiments de sept logements et moins au cours des prochaines années. Cette conférence permettra aux participants d’apprendre où vont les matières organiques et à quoi elles serviront, et d’obtenir des trucs et des astuces pour une collecte sans embûches.",
@@ -41840,3 +41840,5 @@
         "nombre-en-attente": 0
     }
 ]
+
+export default infos;
