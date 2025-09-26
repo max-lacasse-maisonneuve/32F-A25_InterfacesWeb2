@@ -5,7 +5,7 @@ class Toast {
     #elementHTML;
     #duree;
 
-    constructor(conteneurHTML, message, duree = 5000) {
+    constructor(conteneurHTML = document.body, message, duree = 5000) {
         this.#conteneurHTML = conteneurHTML;
         this.#elementHTML = null;
         this.#message = message;

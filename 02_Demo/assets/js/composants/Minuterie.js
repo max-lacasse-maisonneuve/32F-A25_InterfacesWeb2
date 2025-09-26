@@ -1,3 +1,5 @@
+import ToastErreur from "./ToastErreur.js";
+
 class Minuterie {
     // Propriétés privées
     #compteur;
@@ -59,7 +61,7 @@ class Minuterie {
             this.#compteur = 0;
             this.#arreter();
 
-            //TODO:AFFICHER TOAST LORSQUE FINI
+            new ToastErreur(this.#conteneurHTML, "La minuterie est terminée");
         }
 
         this.#afficherTemps();
@@ -81,10 +83,10 @@ class Minuterie {
         if (this.#intervalID != undefined) {
             return;
         }
-        if (this.#compteur === 0) {
-            this.#compteur = this.#duree;
-            this.#afficherTemps();
-        }
+        // if (this.#compteur === 0) {
+        //     this.#compteur = this.#duree;
+        //     this.#afficherTemps();
+        // }
         this.#intervalID = setInterval(this.#diminuerTemps.bind(this), 1000);
     }
 
