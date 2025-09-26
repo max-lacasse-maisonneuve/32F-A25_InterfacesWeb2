@@ -1,25 +1,21 @@
 import Toast from "./Toast.js";
 
 class ToastErreur extends Toast {
-    constructor(conteneurHTML, message, fctRappel) {
-        super(conteneurHTML, message);
-        this.fctRappel = fctRappel;
-        this.fctRappel();
-        this.debug();
+    constructor(conteneurHTML, message, duree) {
+        super(conteneurHTML, message, duree);
     }
 
-    debug() {
-        console.error(this._message);
-    }
-
-    injecterHTML() {
-        const gabarit = `<div class="toast erreur" data-toast>${this.message}</div>`;
+    /**
+     * Fonction servant à injecter le gabarit spécifique au toast erreur
+     */
+    _injecterHTML() {
+        const gabarit = `<div class="toast erreur" data-etat="erreur" data-toast >${this._message}</div>`;
 
         this._conteneurHTML.insertAdjacentHTML("beforeend", gabarit);
         this._elementHTML = this._conteneurHTML.lastElementChild;
 
-        this._elementHTML.addEventListener("click", this.cacher.bind(this));
-        setTimeout(this.cacher.bind(this), 2000);
+        this._elementHTML.addEventListener("click", this._cacher.bind(this));
+        setTimeout(this._cacher.bind(this), this._duree);
     }
 }
 

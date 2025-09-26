@@ -1,40 +1,96 @@
 class Toast {
-    constructor(conteneurHTML, message) {
-        this._conteneurHTML = conteneurHTML;
-        this._elementHTML;
-        this._message = message;
-        this.injecterHTML();
+    //Propriétés privées
+    #conteneurHTML;
+    #message;
+    #elementHTML;
+    #duree;
+
+    constructor(conteneurHTML, message, duree = 5000) {
+        this.#conteneurHTML = conteneurHTML;
+        this.#elementHTML = null;
+        this.#message = message;
+        this.#duree = duree;
+
+        //On crée et affiche le toast lors de la création de l'instance
+        this._injecterHTML();
+
+        //On affiche de façon animée
+        this._afficher();
     }
 
-    set message(nouveauMessage) {
-        if (nouveauMessage == "" || nouveauMessage == "Patate") {
-            console.warn("Attention message invalide");
+    //==== Getters & Setters ====//
 
+    get _elementHTML() {
+        return this.#elementHTML;
+    }
+
+    set _elementHTML(nouvelElement) {
+        if (!(nouvelElement instanceof HTMLElement)) {
+            console.warn("Attention élément HTML invalide");
             return;
         }
-        this._message = nouveauMessage.toLowerCase();
+        this.#elementHTML = nouvelElement;
     }
 
-    get message() {
-        return this._message;
+    get _conteneurHTML() {
+        return this.#conteneurHTML;
+    }
+    get _duree() {
+        return this.#duree;
+    }
+    set _message(nouveauMessage) {
+        if (nouveauMessage == "") {
+            console.warn("Attention message invalide");
+            return;
+        }
+
+        this.#message = nouveauMessage;
     }
 
-    afficher() {}
+    get _message() {
+        return this.#message;
+    }
 
-    cacher() {
+    //==== Méthodes ====//
+    #clicToast() {
+        this._cacher();
+    }
+
+    /**
+     * Affiche le toast en ajoutant la classe "animer"
+     */
+    _afficher() {
+        if (this._elementHTML != null) {
+            this._elementHTML.classList.add("animer");
+        }
+    }
+
+    /**
+     * Cache le toast en le supprimant du DOM
+     */
+    _cacher() {
+        // On s'assure que l'élément HTML existe avant de le manipuler
         if (this._elementHTML != null) {
             this._elementHTML.remove();
         }
     }
 
-    injecterHTML() {
+    /**
+     * Fonction servant à injecter le gabarit du toast générique
+     */
+    _injecterHTML() {
+        // On crée le toast dans le DOM
         const gabarit = `<div class="toast" data-toast>${this._message}</div>`;
-
         this._conteneurHTML.insertAdjacentHTML("beforeend", gabarit);
+
+        // On référence le toast dans l'instance pour pouvoir le manipuler après
         this._elementHTML = this._conteneurHTML.lastElementChild;
 
-        this._elementHTML.addEventListener("click", this.cacher.bind(this));
-        setTimeout(this.cacher.bind(this), 5000);
+        // On affiche le toast de manière animée
+
+        // On cache le toast au clic ou au bout de 5 secondes
+        this._elementHTML.addEventListener("click", this.#clicToast.bind(this));
+        setTimeout(this._cacher.bind(this), this._duree);
     }
 }
 

@@ -13,6 +13,9 @@ class Youtube {
         this.#injecterHTML();
     }
 
+    /**
+     * Injecte le gabarit HTML de la vidéo YouTube dans le conteneur spécifié.
+     */
     #injecterHTML() {
         const gabaritHTML = `
         <div class="video">

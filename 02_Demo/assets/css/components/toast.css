@@ -1,3 +1,24 @@
+@keyframes animationOuvertureToast {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
 .toast {
     position: fixed;
     z-index: 500;
@@ -12,6 +33,12 @@
     top: 0;
     left: 0;
     right: 0;
+
+    opacity: 0;
+
+    &.animer {
+        animation: animationOuvertureToast 4s ease-in-out forwards;
+    }
 
     &.succes {
         background-color: var(--couleur-succes);

@@ -1,9 +1,0 @@
-body {
-    padding: var(--espace-xl);
-}
-
-header {
-    text-align: center;
-    margin-bottom: var(--espace-xl);
-    padding: var(--espace-md);
-}

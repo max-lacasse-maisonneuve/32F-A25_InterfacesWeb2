@@ -1,0 +1,45 @@
+
+/* Section panier achat */
+.panier-achat {
+    position: relative;
+
+    & .btn-modale {
+        font-size: 2rem;
+    }
+    & .panier-modale {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        box-shadow: 0 0 4px 3px black;
+        padding: 2rem;
+        font-size: 0.85rem;
+        min-width: max-content;
+        text-align: right;
+
+        & .liste-panier-modale {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 5px;
+
+            & .prix {
+                margin-left: 10px;
+                font-weight: 600;
+            }
+        }
+
+        & .sous-total,
+        & .tps,
+        & .tvq,
+        & .total {
+            margin: 10px 0;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        &.invisible {
+            display: none;
+        }
+    }
+}

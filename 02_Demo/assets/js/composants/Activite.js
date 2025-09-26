@@ -1,9 +1,5 @@
 class Activite {
     constructor() {}
-
-    auClic(evenement) {}
-
-    injecterHTML() {}
-
-    afficherDetail() {}
 }
+
+export default Activite;
