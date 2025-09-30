@@ -50,6 +50,7 @@ class Application {
         this.#listeActivites = nouvelleListeActivites;
         //Changer l'affichage sur la page.
         this.#conteneurActivitesHTML.innerHTML = "";
+
         this.#listeActivites.forEach(
             function (activite) {
                 activite.injecterHTML();

@@ -10,7 +10,7 @@ class Activite {
         this.#conteneurHTML = conteneurHTML;
         this.#description = description;
         this.#prix = prix;
-        this.panierAchat = panierAchat;
+        // this.panierAchat = panierAchat;
         this.modale = modale;
         this.injecterHTML();
     }
@@ -30,7 +30,15 @@ class Activite {
      * @param {Event} evenement
      */
     #clicBoutonAchat(evenement) {
-        this.panierAchat.ajouterAuPanier(this);
+        const paramEvenement = {
+            detail: {
+                achat: this,
+            },
+        };
+        const evenementAjoutPanier = new CustomEvent("ajoutPanier", paramEvenement);
+        document.dispatchEvent(evenementAjoutPanier);
+
+        // this.panierAchat.ajouterAuPanier(this);
     }
 
     #clicTitre(evenement) {

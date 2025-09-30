@@ -33,13 +33,19 @@ export default class PanierAchat {
         // Ajout d'un écouteur d'événement personnalisé
         // On écoute l'événement "ajoutPanier" qui est déclenché au clic du bouton ajouter quelque part sur la page
         // On l'ajoute sur l'élément du DOM sur lequel l'événement est déclenché
-
+        document.addEventListener("ajoutPanier", this.onAjoutPanier.bind(this));
         // Vérifie si des données sont enregistrées dans le local storage au chargement de la page
     }
 
     //============
     // ÉVÉNEMENTS
     //============
+    onAjoutPanier(evenement) {
+        const achat = evenement.detail.achat;
+        console.log(achat);
+        
+        this.ajouterAuPanier(achat)
+    }
 
     // Méthode privée qui gère les clics sur le bouton panier d'achat dans l'entête
     #clicConteneur() {
