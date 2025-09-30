@@ -6,12 +6,13 @@ class Activite {
     #description;
     #prix;
 
-    constructor(conteneurHTML, description, prix, panierAchat) {
+    constructor(conteneurHTML, description, prix, panierAchat, modale) {
         this.#conteneurHTML = conteneurHTML;
         this.#description = description;
         this.#prix = prix;
         this.panierAchat = panierAchat;
-        this.#injecterHTML();
+        this.modale = modale;
+        this.injecterHTML();
     }
 
     get description() {
@@ -32,13 +33,19 @@ class Activite {
         this.panierAchat.ajouterAuPanier(this);
     }
 
+    #clicTitre(evenement) {
+        this.modale.titre = this.#description;
+        this.modale.message = this.#prix;
+        this.modale.afficher();
+    }
+
     //==============
     // AFFICHAGE
     //==============
     /**
      * Fonction qui sert à ajouter une carte d'activité sur la page
      */
-    #injecterHTML() {
+    injecterHTML() {
         const gabarit = `<div class="carte">
             <h2>${this.#description}</h2>
             <h3>${this.#prix}$</h3>
@@ -50,6 +57,7 @@ class Activite {
         this.#elementHTML = this.#conteneurHTML.lastElementChild;
         this.#boutonHTML = this.#elementHTML.querySelector("button");
 
+        this.#elementHTML.querySelector("h2").addEventListener("click", this.#clicTitre.bind(this));
         //Ajouter une activite sur la page qui inclut description, prix, bouton
         this.#boutonHTML.addEventListener("click", this.#clicBoutonAchat.bind(this));
     }
