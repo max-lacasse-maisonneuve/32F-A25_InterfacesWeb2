@@ -6,6 +6,7 @@
 @import url("./base/typographie.css");
 
 @import url("./components/bouton.css");
+@import url("./components/modale.css");
 @import url("./components/panierAchat.css");
 @import url("./components/carrousel.css");
 @import url("./components/filtres.css");
