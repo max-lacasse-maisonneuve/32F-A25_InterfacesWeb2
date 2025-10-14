@@ -1,0 +1,48 @@
+.minuterie {
+    width: 50vw;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    .minuterie__titre {
+        color: var(--couleur-accent);
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .minuterie__temps {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .minuterie__boutons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+
+        .minuterie__btn {
+            flex: 1;
+            padding: 0.5rem 0.75rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+            background-color: var(--couleur-accent);
+            color: var(--couleur-texte);
+
+            &:hover {
+                transform: translateY(-1px);
+            }
+
+            &:active {
+                transform: translateY(1px);
+            }
+        }
+    }
+}

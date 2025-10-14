@@ -1,0 +1,22 @@
+:root {
+    --police-titre: "Economica", sans-serif;
+    --police-corps: "Urbanist", sans-serif;
+
+    --police-taille-sm: 0.875rem;
+    --police-taille-md: 1rem;
+    --police-taille-lg: 1.25rem;
+    --police-taille-xl: 1.5rem;
+
+    --espace-sm: 0.5rem;
+    --espace-md: 1rem;
+    --espace-lg: 1.5rem;
+    --espace-xl: 2rem;
+
+    --couleur-primaire: #333;
+    --couleur-secondaire: #666;
+    --couleur-accent: #007bff;
+    --couleur-favoris: #e74a93;
+    --couleur-texte: #fff;
+    --couleur-succes: rgb(49, 167, 92);
+    --couleur-erreur: rgb(167, 49, 49);
+}

@@ -1,0 +1,33 @@
+.bouton {
+    background-color: tomato;
+    color: white;
+    border: 2px solid darkred;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    padding: 5px;
+}
+
+.btn {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.modifier {
+    background: #ffc107;
+    color: #000;
+}
+
+.btn.supprimer {
+    background: #dc3545;
+    color: white;
+}
+
+.btn.modifier:hover {
+    background: #ffda6a;
+}
+.btn.supprimer:hover {
+    background: #e55361;
+}

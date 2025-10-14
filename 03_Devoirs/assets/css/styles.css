@@ -16,6 +16,8 @@
 @import url("./components/toast.css");
 @import url("./components/formulaire.css");
 @import url("./components/pagination.css");
+@import url("./components/modale.css");
 
 @import url("./layout/principal.css");
 @import url("./layout/grille.css");
+@import url("./layout/todo.css");

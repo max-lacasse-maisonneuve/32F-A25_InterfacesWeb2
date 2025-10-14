@@ -1,11 +1,9 @@
 import Toast from "./Toast.js";
 
 class ToastSucces extends Toast {
-    constructor(conteneurHTML, message, fctRappel) {
-        super(conteneurHTML, message);
+    constructor(message) {
+        super(message);
     }
-
-    animer() {}
 
     injecterHTML() {
         const gabarit = `<div class="toast succes" data-toast>${this.message}</div>`;

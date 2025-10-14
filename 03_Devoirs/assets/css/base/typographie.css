@@ -1,0 +1,24 @@
+body {
+    font-family: var(--police-corps);
+    font-size: var(--police-taille-md);
+    line-height: var(--interligne-base);
+    background-color: var(--couleur-fond-base);
+}
+
+h1 {
+    font-size: var(--police-taille-xl);
+    font-weight: bold;
+    margin-bottom: var(--espace-lg);
+}
+
+h2 {
+    font-size: var(--police-taille-lg);
+    font-weight: bold;
+    margin-bottom: var(--espace-md);
+}
+
+h3 {
+    font-size: var(--police-taille-md);
+    font-weight: bold;
+    margin-bottom: var(--espace-sm);
+}

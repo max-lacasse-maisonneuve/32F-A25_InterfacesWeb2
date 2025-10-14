@@ -1,0 +1,63 @@
+.degrade {
+    width: 250px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    text-align: center;
+
+    .degrade__titre {
+        font-size: var(--police-taille-lg);
+        margin-bottom: 1rem;
+    }
+
+    .degrade__couleurs,
+    .degrade__angle {
+        margin-bottom: 1rem;
+    }
+
+    .degrade__couleurs label,
+    .degrade__angle label {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .degrade__input {
+        margin-top: 0.25rem;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .degrade__aperçu {
+        width: 100%;
+        height: 80px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+        /* ===== À changer par programmation ===== */
+        background: linear-gradient(90deg, #ff0000, #0000ff);
+    }
+
+    .degrade__btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: var(--couleur-accent);
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .degrade__btn:hover {
+        background-color: var(--couleur-secondaire);
+        transform: translateY(-1px);
+    }
+
+    .degrade__btn:active {
+        transform: translateY(1px);
+    }
+}

@@ -1,6 +1,6 @@
 class Toast {
-    constructor(conteneurHTML, message) {
-        this._conteneurHTML = conteneurHTML;
+    constructor(message) {
+        this._conteneurHTML = document.body;
         this._elementHTML;
         this._message = message;
         this.injecterHTML();
