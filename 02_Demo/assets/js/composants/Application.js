@@ -7,6 +7,7 @@ class Application {
     #conteneurHTML = null;
     #conteneurListePiscinesHTML = null;
     #boutonGeolocalisationHTML = null;
+    #paginationConteneurHTML = null;
     #listePiscines = [];
     #formulaire = null;
     #pagination = null;
@@ -15,6 +16,7 @@ class Application {
         this.#conteneurHTML = document.querySelector("[data-application]");
         this.#conteneurListePiscinesHTML = this.#conteneurHTML.querySelector("[data-liste-piscine]");
         this.#boutonGeolocalisationHTML = this.#conteneurHTML.querySelector("[data-geolocalisation]");
+        this.#paginationConteneurHTML = this.#conteneurHTML.querySelector("[data-pagination]");
 
         this.#boutonGeolocalisationHTML.addEventListener("click", this.#onClicGeolocalisation.bind(this));
 
@@ -50,7 +52,7 @@ class Application {
      */
 
     recupererDonnees() {
-        fetch("http://localhost:8888/api/piscine/rechercherTout.php")
+        fetch(`http://localhost:8888/api/piscine/rechercherPagination.php?limite=5&page=1`)
             .then(
                 function (reponse) {
                     return reponse.json();
@@ -58,7 +60,7 @@ class Application {
             )
             .then(
                 function (donnees) {
-                    this.#listePiscines = donnees.map(
+                    this.#listePiscines = donnees.resultats.map(
                         function (donneesPiscine) {
                             const { id, type_piscine, arrondissement, nom, adresse, gestion, equipement, latitude, longitude } = donneesPiscine;
                             const nouvellePiscine = new Piscine(this, id, type_piscine, nom, arrondissement, adresse, gestion, equipement, longitude, latitude);
@@ -69,6 +71,33 @@ class Application {
 
                     this.afficherListe(this.#listePiscines);
                     this.#afficherCarte();
+                    this.#pagination = new Pagination(this, this.#paginationConteneurHTML, donnees.total, 5, 1);
+                }.bind(this)
+            );
+    }
+
+    changerPage(pageCourante, nbElementsParPage) {
+        const params = new URLSearchParams({ limite: nbElementsParPage, page: pageCourante });
+        fetch(`http://localhost:8888/api/piscine/rechercherPagination.php?${params}`)
+            .then(
+                function (reponse) {
+                    return reponse.json();
+                }.bind(this)
+            )
+            .then(
+                function (donnees) {
+                    this.#listePiscines = donnees.resultats.map(
+                        function (donneesPiscine) {
+                            const { id, type_piscine, arrondissement, nom, adresse, gestion, equipement, latitude, longitude } = donneesPiscine;
+                            const nouvellePiscine = new Piscine(this, id, type_piscine, nom, arrondissement, adresse, gestion, equipement, longitude, latitude);
+
+                            return nouvellePiscine;
+                        }.bind(this)
+                    );
+
+                    this.afficherListe(this.#listePiscines);
+                    // this.#afficherCarte();
+                    this.#pagination.mettreAJour(donnees.page, donnees.limite, donnees.total);
                 }.bind(this)
             );
     }
