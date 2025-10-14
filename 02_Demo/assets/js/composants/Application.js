@@ -16,28 +16,9 @@ class Application {
         this.#conteneurListePiscinesHTML = this.#conteneurHTML.querySelector("[data-liste-piscine]");
         this.#boutonGeolocalisationHTML = this.#conteneurHTML.querySelector("[data-geolocalisation]");
 
-        // setTimeout(function () {
-        //     console.log("delai terminé");
-        // }, 3000);
-
-        // console.log("après le settimeout");
         this.#boutonGeolocalisationHTML.addEventListener("click", this.#onClicGeolocalisation.bind(this));
-        this.rechercherParId(1);
+
         this.recupererDonnees();
-
-        let testNouvellePiscine = {
-            id: "48",
-            type_piscine: "Piscine modifiée encore",
-            nom: "TEST sdfsdf",
-            arrondissement: "Ahuntsic-Cartierville",
-            adresse: "TEST sdfsdf",
-            gestion: "Municipale",
-            equipement: "Complexe aquatique",
-            longitude: "-73.6363901",
-            latitude: "45.5525260",
-        };
-
-        this.modifierPiscine(testNouvellePiscine);
     }
 
     get conteneurHTML() {
@@ -87,106 +68,18 @@ class Application {
                     );
 
                     this.afficherListe(this.#listePiscines);
+                    this.#afficherCarte();
                 }.bind(this)
             );
     }
 
-    rechercherParId(id) {
-        const params = new URLSearchParams({ id: id, nom: "montréal" });
+    rechercherParId(id) {}
 
-        fetch(`http://localhost:8888/api/piscine/rechercherUn.php?${params}`)
-            .then(function (reponse) {
-                return reponse.json();
-            })
-            .then(function (donnees) {
-                console.log(donnees);
-            });
-    }
+    ajouterPiscine(nouvellePiscine) {}
 
-    ajouterPiscine(nouvellePiscine) {
-        const donneesEncodees = JSON.stringify(nouvellePiscine);
+    modifierPiscine(donneesPiscine) {}
 
-        const config = {
-            method: "POST",
-            header: {
-                "Content-Type": "application/json",
-            },
-            body: donneesEncodees,
-        };
-
-        fetch("http://localhost:8888/api/piscine/ajouterUn.php", config)
-            .then(
-                function (reponse) {
-                    return reponse.json();
-                }.bind(this)
-            )
-            .then(
-                function (donnees) {
-                    const { id } = donnees;
-                    const { type_piscine, arrondissement, nom, adresse, gestion, equipement, latitude, longitude } = nouvellePiscine;
-
-                    const instancePiscine = new Piscine(this, id, type_piscine, nom, arrondissement, adresse, gestion, equipement, longitude, latitude);
-                    this.#listePiscines.push(instancePiscine);
-                    instancePiscine.injecterHTML();
-                }.bind(this)
-            );
-    }
-
-    modifierPiscine(donneesPiscine) {
-        const donneesEncodees = JSON.stringify(donneesPiscine);
-
-        const config = {
-            method: "POST",
-            header: {
-                "Content-Type": "application/json",
-            },
-            body: donneesEncodees,
-        };
-
-        fetch("http://localhost:8888/api/piscine/modifierUn.php", config)
-            .then(
-                function (reponse) {
-                    return reponse.json();
-                }.bind(this)
-            )
-            .then(
-                function (donnees) {
-                    const instancePiscine = this.#listePiscines.find(
-                        function (piscine) {
-                            return piscine.id == donneesPiscine.id;
-                        }.bind(this)
-                    );
-
-                    instancePiscine.modifier(donneesPiscine);
-                }.bind(this)
-            );
-    }
-
-    supprimerPiscine(id) {
-        const params = new URLSearchParams({ id });
-        fetch(`http://localhost:8888/api/piscine/supprimerUn.php?id=${id}`)
-            .then(
-                function (reponse) {
-                    return reponse.json();
-                }.bind(this)
-            )
-            .then(
-                function (donnees) {
-                    console.log(donnees);
-                    this.#listePiscines = this.#listePiscines.filter(
-                        function (piscine) {
-                            console.log(piscine, id);
-
-                            if (piscine.id == id) {
-                                piscine.supprimer();
-                            }
-
-                            return piscine.id != id;
-                        }.bind(this)
-                    );
-                }.bind(this)
-            );
-    }
+    supprimerPiscine(id) {}
 
     /**
      * Afficher la liste des piscines dans le HTML
