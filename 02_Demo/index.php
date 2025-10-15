@@ -20,8 +20,17 @@
         <form action="" data-formulaire>
             <div class="input-group">
                 <label for="nom">Nom de la piscine</label>
-                <input type="text" id="nom" name="nom" required />
+                <input type="text" id="nom" name="nom" required maxlength="200" minlength="3" />
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
             </div>
+            <!-- <div class="input-group">
+                <label for="nom">Nom de la piscine</label>
+                <input type="number" id="nom" name="nom" required max="200" min="3" step="0.1" />
+            </div>
+            <div class="input-group">
+                <label for="nom">Nom de la piscine</label>
+                <input type="date" id="nom" name="nom" required min="2025-09-30" max="2025-10-15" />
+            </div> -->
 
             <div class="input-group">
                 <label for="type_piscine">Type de piscine</label>
@@ -32,16 +41,19 @@
                     <option value="Jeu d'eau">Jeu d'eau</option>
                     <option value="Pataugeoire">Pataugeoire</option>
                 </select>
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
             </div>
 
             <div class="input-group">
                 <label for="arrondissement">Arrondissement</label>
                 <input type="text" id="arrondissement" name="arrondissement" required />
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
             </div>
 
             <div class="input-group">
                 <label for="adresse">Adresse</label>
                 <input type="text" id="adresse" name="adresse" required />
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
             </div>
 
             <div class="input-group">
@@ -53,24 +65,29 @@
                     <option value="OBNL">OBNL</option>
                     <option value="Parapublique">Parapublique</option>
                 </select>
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
             </div>
 
             <div class="input-group">
                 <label for="equipement">Équipement</label>
-                <input type="text" id="equipement" name="equipement" placeholder="Ex: Piscine récréative" />
+                <input type="text" id="equipement" name="equipement" placeholder="Ex: Piscine récréative" required />
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
             </div>
 
             <div class="input-group">
                 <label for="longitude">Longitude</label>
                 <input type="number" step="0.000001" id="longitude" name="longitude" required />
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
             </div>
 
             <div class="input-group">
                 <label for="latitude">Latitude</label>
                 <input type="number" step="0.000001" id="latitude" name="latitude" required />
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
             </div>
 
             <button type="submit">Ajouter la piscine</button>
+            <button type="reset">Réinitialiser le formulaire</button>
         </form>
 
         <section class="grille" data-liste-piscine></section>

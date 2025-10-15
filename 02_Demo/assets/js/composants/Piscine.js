@@ -37,17 +37,31 @@ class Piscine {
         return { latitude: this.#latitude, longitude: this.#longitude };
     }
 
-    onClicSupprimer(evenement) {
-        this.#application.supprimerPiscine(this.#id);
-    }
+    onClicCarte(evenement) {
+        const declencheur = evenement.target;
 
-    onClicCarte() {
-        this.#application.centrerCarte(this.#latitude, this.#longitude);
+        if (declencheur.closest("[ data-action='modifier']")) {
+            const donnees = {
+                id: this.#id,
+                type_piscine: this.#type,
+                arrondissement: this.#arrondissement,
+                nom: this.#nom,
+                adresse: this.#adresse,
+                gestion: this.#gestion,
+                equipement: this.#equipement,
+                latitude: this.#latitude,
+                longitude: this.#longitude,
+            };
+
+            this.#application.formulaire.remplirFormulaire(donnees);
+        } else if (declencheur.closest("[ data-action='supprimer']")) {
+            this.#application.supprimerPiscine(this.#id);
+        } else {
+            this.#application.centrerCarte(this.#latitude, this.#longitude);
+        }
     }
 
     injecterHTML() {
-        console.log(this.#image);
-
         const img = this.#image ? `<img src="${this.#image}" alt="Image de la piscine ${this.#nom}">` : "";
         const gabarit = `
             <div class="piscine carte" data-id="${this.#id}" data-longitude="${this.#longitude}" data-latitude="${this.#latitude}">
@@ -58,13 +72,13 @@ class Piscine {
                 <p>Gestion : <span data-gestion>${this.#gestion}</span></p>
                 <p>Équipement : <span data-equipement>${this.#equipement}</span></p>
                 ${img}
+                <button class="supprimer" data-action="modifier">Modifier</button>
                 <button class="supprimer" data-action="supprimer">Supprimer</button>
             </div>
         `;
         this.#conteneurHTML.insertAdjacentHTML("beforeend", gabarit);
         this.#elementHTML = this.#conteneurHTML.lastElementChild;
-        // this.#elementHTML.addEventListener("click", this.onClicCarte.bind(this));
-        this.#elementHTML.querySelector("[data-action='supprimer']").addEventListener("click", this.onClicSupprimer.bind(this));
+        this.#elementHTML.addEventListener("click", this.onClicCarte.bind(this));
     }
 
     modifier(nouvellePiscine) {

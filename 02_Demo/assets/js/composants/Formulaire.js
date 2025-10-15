@@ -3,23 +3,115 @@ class Formulaire {
     #conteneurHTML;
     #elementHTML;
     #boutonSubmitHTML;
-
+    #boutonResetHTML;
+    #champsHTML;
+    #methode;
     #bEstValide = false;
     #donneesFormulaire = {};
 
     constructor(application) {
         this.#application = application;
-        this.#conteneurHTML = this.#application.conteneurHTML.querySelector("[data-formulaire]");
-        this.#elementHTML = this.#conteneurHTML.querySelector("form");
+        this.#elementHTML = this.#application.conteneurHTML.querySelector("[data-formulaire]");
         this.#boutonSubmitHTML = this.#elementHTML.querySelector("button[type='submit']");
+        this.#boutonResetHTML = this.#elementHTML.querySelector("button[type='reset']");
+        this.#champsHTML = this.#elementHTML.querySelectorAll("[name]");
+
+        this.#elementHTML.addEventListener("submit", this.#onSubmitFormulaire.bind(this));
+        this.#elementHTML.addEventListener("change", this.#onChangementChamps.bind(this));
+        this.#elementHTML.addEventListener("reset", this.#onResetFormulaire.bind(this));
+
+        this.#methode = "POST";
+        this.viderFormulaire();
+        this.#validerFormulaire();
     }
 
-    #onSubmitFormulaire(evenement) {}
+    //On en profite au passage pour également vider les données
+    #onResetFormulaire(evenement) {
+        this.viderFormulaire(); //Vide les donnees
+    }
 
-    #onChangementChamps(evenement) {}
+    #onSubmitFormulaire(evenement) {
+        evenement.preventDefault(); // On bloque l'envoi de formulaire par défaut
 
-    #validerFormulaire() {}
+        if (this.#validerFormulaire()) {
+            //Envoyer les infos de notre formulaire
+            this.#champsHTML.forEach(
+                function (champ) {
+                    const name = champ.name;
+                    const value = champ.value;
+                    this.#donneesFormulaire[name] = value;
+                }.bind(this)
+            );
 
-    #envoyerFormulaire() {}
+            if (this.#methode === "POST") {
+                this.#application.ajouterPiscine(this.#donneesFormulaire);
+            } else if (this.#methode === "PUT") {
+                this.#application.modifierPiscine(this.#donneesFormulaire);
+            }
+        }
+    }
+
+    #onChangementChamps(evenement) {
+        // Au changement d'info d'un champs
+        const declencheur = evenement.target;
+        // Valider les informations du champs et nettoyer
+        if (declencheur.closest("[name]")) {
+            this.#validerChamp(declencheur);
+        }
+        // Valider le formulaire
+        this.#validerFormulaire();
+    }
+
+    remplirFormulaire(donnees) {
+        this.#methode = "PUT";
+        this.#boutonSubmitHTML.textContent = "Modifier la piscine";
+        this.#donneesFormulaire = donnees;
+
+        for (const name in donnees) {
+            const value = donnees[name];
+
+            const elementHTML = this.#elementHTML.querySelector(`[name="${name}"]`);
+
+            if (elementHTML !== null) {
+                elementHTML.value = value;
+            }
+        }
+        this.#validerFormulaire();
+    }
+
+    #validerFormulaire() {
+        this.#champsHTML.forEach(
+            function (champ) {
+                this.#validerChamp(champ);
+            }.bind(this)
+        );
+
+        const estValide = this.#elementHTML.checkValidity();
+
+        //Bloquer le bouton submitthis.
+        this.#boutonSubmitHTML.disabled = this.#elementHTML.checkValidity() == false ? "disabled" : "";
+
+        return estValide;
+    }
+
+    #validerChamp(champ) {
+        //Nettoyer
+        champ.value = champ.value.trim();
+
+        //Formatter les donnees au besoin
+        if (champ.name == "telephone") {
+            ///
+        }
+
+        //Afficher le message d'erreur personnalisé au besoin
+        // champ.closest(".input-group").querySelector(".message-erreur").classList.toggle("invisible",champ.checkValidity())
+    }
+
+    viderFormulaire() {
+        this.#donneesFormulaire = {};
+        this.#elementHTML.reset();
+        this.#methode = "POST";
+        this.#boutonSubmitHTML.textContent = "Ajouter la piscine";
+    }
 }
 export default Formulaire;

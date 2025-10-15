@@ -18,6 +18,26 @@ form {
             border-radius: 4px;
             font-size: 1rem;
         }
+
+        & .message-erreur {
+            color: red;
+            display: none;
+        }
+
+        & input:invalid,
+        & select:invalid {
+            border: 2px solid red;
+        }
+
+        & input:valid,
+        & select:valid {
+            border: 2px solid lime;
+        }
+
+        & input:invalid ~ .message-erreur,
+        & select:invalid ~ .message-erreur {
+            display: block;
+        }
     }
 
     & button {

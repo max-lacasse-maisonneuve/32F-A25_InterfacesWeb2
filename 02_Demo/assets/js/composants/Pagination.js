@@ -21,9 +21,16 @@ class Pagination {
         this.#injecterHTML();
     }
 
+    get pageCourante() {
+        return this.#pageCourante;
+    }
+    get itemsParPage() {
+        return this.#itemsParPage;
+    }
+
     #onClicPagination(evenement) {
         const declencheur = evenement.target;
-        console.log(declencheur);
+        // console.log(declencheur);
 
         if (declencheur.closest("[data-direction]")) {
             const direction = declencheur.dataset.direction;
@@ -61,6 +68,11 @@ class Pagination {
         this.#totalItems = totalItems;
         this.#itemsParPage = itemsParPage;
         this.#totalPages = Math.ceil(this.#totalItems / this.#itemsParPage);
+
+        //Si on supprime le dernier élément, le total diminue et on affiche la dernière page.
+        if (this.#pageCourante > this.#totalPages) {
+            this.#application.changerPage(this.#totalPages, this.#itemsParPage);
+        }
 
         this.#boutonPrecedentHTML.disabled = this.#pageCourante == 1 ? "disabled" : "";
         this.#boutonSuivantHTML.disabled = this.#pageCourante == this.#totalPages ? "disabled" : "";
