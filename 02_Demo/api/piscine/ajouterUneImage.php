@@ -34,6 +34,7 @@ try {
 
     ///////////////
     // Préparer le chemin de destination
+    // Changer le dossier en fonction de votre structure de projet
     $id = (int) $id;
     $dossierImages = __DIR__ . '/../../assets/img/';
     $destination = $dossierImages . basename($fichier['name']);

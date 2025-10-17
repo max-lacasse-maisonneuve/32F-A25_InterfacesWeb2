@@ -1,4 +1,4 @@
-# Exercice : Ajout de la fonctionnalité d'image pour les piscines
+# Nouvelle fonctionnalité : Ajout d'image pour les piscines
 
 ## 🎯 Objectif
 
@@ -61,6 +61,147 @@ ALTER TABLE piscine ADD COLUMN image VARCHAR(255) NULL;
     -   [ ] Utiliser `FormData` au lieu de `JSON.stringify()` pour le body de la requête pour l'ajout/modification de l'image
     -   [ ] Ajouter le fichier image au FormData avec `formData.append('image', fichier)`
 
+**Exemple de code pour récupérer le fichier :**
+
+```javascript
+// Dans la classe Formulaire
+
+// Récupérer la référence au champ file dans le constructeur
+this.#champImageHTML = this.#conteneurHTML.querySelector("[data-image]");
+
+// Dans la méthode de soumission du formulaire
+#onSubmitFormulaire(evenement) {
+    evenement.preventDefault();
+
+    // Récupérer le fichier sélectionné
+    if (this.#champImageHTML.files.length === 0) {
+        console.log("Aucun fichier sélectionné.");
+        return;
+    }
+    const fichierImage = this.#champImageHTML.files[0];
+
+    // Vérifier qu'un fichier a été sélectionné
+    if (fichierImage) {
+        console.log("Nom du fichier:", fichierImage.name);
+        console.log("Type du fichier:", fichierImage.type);
+        console.log("Taille du fichier:", fichierImage.size, "octets");
+
+        // Créer un FormData pour envoyer le fichier
+        const formData = new FormData();
+        formData.append('image', fichierImage);
+        formData.append('id', donneesPiscine.id); // Si modification
+
+        // Envoyer le fichier à l'API
+        this.#application.ajouterImage(formData);
+    }
+}
+```
+
+Dans la méthode `ajouterImage()` de la classe `Application`, modifier la requête fetch pour utiliser `formData` comme body.
+
+```javascript
+    // Dans la classe Formulaire
+    #onSubmitFormulaire(evenement) {
+        evenement.preventDefault(); // On bloque l'envoi de formulaire par défaut
+
+        if (this.#validerFormulaire()) {
+            //Envoyer les infos de notre formulaire
+            this.#champsHTML.forEach(
+                function (champ) {
+                    const name = champ.name;
+
+                    // Valider le fichier avant de l'envoyer
+                    if (champ.name === "image" ) {
+                        const fichier = champ.files[0];
+
+                        console.log("Nom du fichier:", fichier.name);
+                        console.log("Type du fichier:", fichier.type);
+                        console.log("Taille du fichier:", fichier.size, "octets");
+
+                        // Vérifier qu'un fichier a été sélectionné
+                        if (!fichier || champ.files.length === 0) {
+                            new ToastErreur(document.body, "Aucun fichier sélectionné.");
+                            return;
+                        }
+
+
+                        // Validation du type
+                        const typesAcceptes = ["image/jpeg", "image/png", "image/gif", "image/webp"];
+                        if (!typesAcceptes.includes(fichier.type)) {
+                            new ToastErreur(document.body, "Format d'image non accepté. Utilisez JPG, PNG, GIF ou WebP.");
+                            return;
+                        }
+
+                        // Validation de la taille (5 MB = 5 * 1024 * 1024 octets)
+                        const tailleMax = 5 * 1024 * 1024;
+                        if (fichier.size > tailleMax) {
+                            new ToastErreur(document.body, "L'image est trop volumineuse. Taille maximale: 5 MB.");
+                            return;
+                        }
+
+                        this.#fichierImage = fichier; // On peut stocker le nom du fichier ou son chemin
+                    }else {
+                        const value = champ.value;
+                        this.#donneesFormulaire[name] = value;
+                    }
+                }.bind(this)
+            );
+
+            if (this.#methode === "POST") {
+                this.#application.ajouterPiscine(this.#donneesFormulaire, this.#fichierImage);
+            } else if (this.#methode === "PUT") {
+                this.#application.modifierPiscine(this.#donneesFormulaire, this.#fichierImage);
+            }
+        }
+    }
+```
+
+```javascript
+// Dans la classe Application
+ajouterPiscine(nouvellePiscine, fichierImage) {
+        const config = {
+            method: "POST",
+            header: {
+                "Content-Type": "application/JSON",
+            },
+            body: JSON.stringify(nouvellePiscine),
+        };
+
+        fetch(`http://localhost:8888/api/piscine/ajouterUn.php`, config)
+            .then(
+                    function (reponse) {
+                        return reponse.json();
+                    }.bind(this)
+                )
+            .then(
+                function (donnees) {
+                    const formData = new FormData();
+                    formData.append('image', fichierImage);
+                    formData.append('id', donnees.id); // Nécessaire pour lier l'image à la piscine
+
+                    const config = {
+                        method: "POST",
+                        body: formData, // Utilisation de FormData
+                    };
+
+                    return fetch(`http://localhost:8888/api/piscine/ajouterImage.php`, config);
+                }.bind(this)
+            )
+            .then(
+                function (reponse) {
+                    return reponse.json();
+                }.bind(this)
+            )
+            .then(
+                function (donnees) {
+                    this.#formulaire.viderFormulaire();
+
+                    this.changerPage(this.#pagination.pageCourante, this.#pagination.itemsParPage);
+                }.bind(this)
+            );
+    }
+```
+
 **Fichier concerné :** `Formulaire.js` et `Application.js`
 
 ---
@@ -74,14 +215,12 @@ ALTER TABLE piscine ADD COLUMN image VARCHAR(255) NULL;
     -   [ ] Valider la taille du fichier (max 5 MB)
     -   [ ] Recevoir les données en `FormData` plutôt qu'en JSON
     -   [ ] Récupérer le fichier depuis `$_FILES['image']`
-    -   [ ] Enregistrer le chemin de l'image dans la base de données
     -   [ ] Générer un nom unique pour éviter les conflits (ex: `uniqid() . '_' . nom_original`)
     -   [ ] Créer le dossier `assets/img` s'il n'existe pas
     -   [ ] Déplacer le fichier téléversé dans `assets/img/`
+    -   [ ] Enregistrer le chemin de l'image dans la base de données dans la colonne `image` de la piscine correspondante
     -   [ ] Retourner le chemin relatif du fichier en JSON
     -   [ ] Gérer les erreurs de téléversement avec des messages appropriés
-
-**Fichier à créer :** `api/piscine/ajouterImage.php`
 
 **Types MIME acceptés :**
 
@@ -89,6 +228,8 @@ ALTER TABLE piscine ADD COLUMN image VARCHAR(255) NULL;
 -   `image/png`
 -   `image/gif`
 -   `image/webp`
+
+**Fichier à créer :** `api/piscine/ajouterImage.php`
 
 ---
 
@@ -112,7 +253,7 @@ ALTER TABLE piscine ADD COLUMN image VARCHAR(255) NULL;
 
 ---
 
-### 9. Gérer la suppression d'image (Extra)
+### 9. Gérer la suppression d'image
 
 -   [ ] Dans `supprimerUn.php`, ajouter la logique pour :
     -   [ ] Récupérer le chemin de l'image avant de supprimer l'enregistrement
@@ -122,6 +263,51 @@ ALTER TABLE piscine ADD COLUMN image VARCHAR(255) NULL;
     -   [ ] Gérer les erreurs si la suppression du fichier échoue
 
 **Fichier concerné :** `api/piscine/supprimerUn.php`
+
+```php
+// Dans supprimerUn.php
+//... Récupération de l'ID à supprimer via $_GET
+    $id = $_GET['id'] ?? null;
+
+// Récupérer le chemin de l'image avant de supprimer l'enregistrement
+    $requeteSelect = $connexion->prepare("SELECT image FROM piscine WHERE id = :id");
+    $requeteSelect->bindParam(':id', $id, PDO::PARAM_INT);
+    $requeteSelect->execute();
+
+    $piscine = $requeteSelect->fetch(PDO::FETCH_ASSOC);
+
+    if (!$piscine) {
+        header('Content-Type: application/json');
+        http_response_code(404); // Not Found
+        $resultat = ["success" => false, "message" => "Aucun enregistrement trouvé avec cet ID"];
+        echo json_encode($resultat);
+        exit;
+    }
+
+    $cheminImage = $piscine['image'];
+
+    // Supprimer l'image sur le serveur si l'information est disponible
+    if (!empty($cheminImage)) {
+        $cheminComplet = __DIR__ . '/../../' . $cheminImage;
+
+        // Vérifier si le fichier existe sur le serveur
+        if (file_exists($cheminComplet)) {
+            // Tenter de supprimer le fichier
+            if (!unlink($cheminComplet)) {
+                // Gérer l'erreur si la suppression échoue
+                header('Content-Type: application/json');
+                http_response_code(404); // Not Found
+                $resultat = ["success" => false, "message" => "Impossible de supprimer le fichier image : " . $cheminImage];
+                echo json_encode($resultat);
+                exit;
+            }
+        } else {
+            // Le fichier n'existe pas, on peut logguer cette information si nécessaire
+            error_log("Le fichier image à supprimer n'existe pas : " . $cheminComplet);
+        }
+    }
+    //... Suite de la suppression de l'enregistrement dans la base de données
+```
 
 ---
 
