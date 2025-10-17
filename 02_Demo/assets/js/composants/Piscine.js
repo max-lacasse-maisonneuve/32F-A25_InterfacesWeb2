@@ -66,12 +66,13 @@ class Piscine {
         const gabarit = `
             <div class="piscine carte" data-id="${this.#id}" data-longitude="${this.#longitude}" data-latitude="${this.#latitude}">
                 <h2 data-nom>${this.#nom}</h2>
+                ${img}
                 <p>Type : <span data-type>${this.#type}</span></p>
                 <p>Arrondissement : <span data-arrondissement>${this.#arrondissement}</span></p>
                 <p>Adresse : <span data-adresse>${this.#adresse}</span></p>
                 <p>Gestion : <span data-gestion>${this.#gestion}</span></p>
                 <p>Équipement : <span data-equipement>${this.#equipement}</span></p>
-                ${img}
+              
                 <button class="supprimer" data-action="modifier">Modifier</button>
                 <button class="supprimer" data-action="supprimer">Supprimer</button>
             </div>
