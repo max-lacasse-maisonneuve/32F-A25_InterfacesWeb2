@@ -1,11 +1,8 @@
 import Toast from "./Toast.js";
 
 class ToastErreur extends Toast {
-    constructor(conteneurHTML, message, fctRappel) {
+    constructor(conteneurHTML, message) {
         super(conteneurHTML, message);
-
-        this.fctRappel = fctRappel;
-        this.fctRappel();
         this.debug();
     }
 

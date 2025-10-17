@@ -86,6 +86,12 @@
                 <p class="message-erreur">Vous devez corriger le champ suivant</p>
             </div>
 
+            <div class="input-group">
+                <label for="image">Image</label>
+                <input type="file" id="image" name="image" accept="image/*" data-image />
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
+            </div>
+
             <button type="submit">Ajouter la piscine</button>
             <button type="reset">Réinitialiser le formulaire</button>
         </form>

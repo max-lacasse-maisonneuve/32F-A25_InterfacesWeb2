@@ -1,7 +1,7 @@
 import Toast from "./Toast.js";
 
 class ToastSucces extends Toast {
-    constructor(conteneurHTML, message, fctRappel) {
+    constructor(conteneurHTML, message) {
         super(conteneurHTML, message);
     }
 

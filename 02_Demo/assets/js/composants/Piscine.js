@@ -62,7 +62,10 @@ class Piscine {
     }
 
     injecterHTML() {
-        const img = this.#image ? `<img src="${this.#image}" alt="Image de la piscine ${this.#nom}">` : "";
+        const img = this.#image
+            ? `<img src="${this.#image}" alt="Image de la piscine ${this.#nom}">`
+            : `<img src="assets/img/piscine_placeholder.jpg" alt="Image de la piscine ${this.#nom}">`;
+
         const gabarit = `
             <div class="piscine carte" data-id="${this.#id}" data-longitude="${this.#longitude}" data-latitude="${this.#latitude}">
                 <h2 data-nom>${this.#nom}</h2>

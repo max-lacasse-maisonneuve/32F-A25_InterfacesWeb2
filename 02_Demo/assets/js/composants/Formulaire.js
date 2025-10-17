@@ -8,7 +8,7 @@ class Formulaire {
     #methode;
     #bEstValide = false;
     #donneesFormulaire = {};
-
+    #fichierImage;
     constructor(application) {
         this.#application = application;
         this.#elementHTML = this.#application.conteneurHTML.querySelector("[data-formulaire]");
@@ -38,15 +38,35 @@ class Formulaire {
             this.#champsHTML.forEach(
                 function (champ) {
                     const name = champ.name;
-                    const value = champ.value;
-                    this.#donneesFormulaire[name] = value;
+                    // const type = champ.type;
+                    if (name == "image") {
+                        const fichier = champ.files[0];
+                        if (!fichier || champ.files.length == 0) {
+                            // new toast erreur = vous devez ajouter un fichier
+                        }
+
+                        const types = ["image/jpg", "image/jpeg", "image/png"];
+
+                        if (!types.includes(fichier.type)) {
+                            //Retourner toast erreur, pas du bon type.
+                        }
+
+                        const tailleMax = 5 * 1024 * 1024;
+                        if (fichier.size > tailleMax) {
+                            //REtourner une erreur, le fichier est trop grand
+                        }
+                        this.#fichierImage = fichier;
+                    } else {
+                        const value = champ.value;
+                        this.#donneesFormulaire[name] = value;
+                    }
                 }.bind(this)
             );
 
             if (this.#methode === "POST") {
-                this.#application.ajouterPiscine(this.#donneesFormulaire);
+                this.#application.ajouterPiscine(this.#donneesFormulaire, this.#fichierImage);
             } else if (this.#methode === "PUT") {
-                this.#application.modifierPiscine(this.#donneesFormulaire);
+                this.#application.modifierPiscine(this.#donneesFormulaire, this.#fichierImage);
             }
         }
     }
@@ -96,6 +116,9 @@ class Formulaire {
 
     #validerChamp(champ) {
         //Nettoyer
+        if (champ.type == "file") {
+            return;
+        }
         champ.value = champ.value.trim();
 
         //Formatter les donnees au besoin
@@ -111,6 +134,7 @@ class Formulaire {
         this.#donneesFormulaire = {};
         this.#elementHTML.reset();
         this.#methode = "POST";
+        this.#fichierImage = null;
         this.#boutonSubmitHTML.textContent = "Ajouter la piscine";
     }
 }

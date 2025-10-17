@@ -17,7 +17,7 @@ try {
 
     $id = (int) $_GET['id'];
 
-    // Récupérer le chemin de l'image avant de supprimer l'enregistrement
+    // // Récupérer le chemin de l'image avant de supprimer l'enregistrement
     $requeteSelect = $connexion->prepare("SELECT image FROM piscine WHERE id = :id");
     $requeteSelect->bindParam(':id', $id, PDO::PARAM_INT);
     $requeteSelect->execute();
