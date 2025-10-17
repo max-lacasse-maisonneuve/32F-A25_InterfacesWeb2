@@ -304,11 +304,12 @@ class Application {
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
             maxZoom: 19,
         }).addTo(this.#map);
+
         this.#markersLayer.clearLayers();
+
         this.#listePiscines.forEach(
             function (piscine) {
                 const position = piscine.position;
-                // console.log(position);
 
                 L.marker([position.latitude, position.longitude]).addTo(this.#markersLayer);
             }.bind(this)
