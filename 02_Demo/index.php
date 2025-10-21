@@ -15,6 +15,10 @@
 <body>
     <header>
         <h1>Liste des piscines de Montréal</h1>
+        <nav>
+            <a href="/" data-link>Accueil</a>
+            <a href="/admin" data-link>Admin</a>
+        </nav>
     </header>
     <main data-application>
         <form action="" data-formulaire>
@@ -87,6 +91,7 @@
             </div>
 
             <div class="input-group">
+                <img src="" alt="" data-visualisateur-image />
                 <label for="image">Image</label>
                 <input type="file" id="image" name="image" accept="image/*" data-image />
                 <p class="message-erreur">Vous devez corriger le champ suivant</p>

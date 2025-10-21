@@ -59,4 +59,8 @@ form {
             cursor: not-allowed;
         }
     }
+
+    [data-visualisateur-image] {
+        max-width: 200px;
+    }
 }

@@ -3,7 +3,7 @@ import Pagination from "./Pagination.js";
 import Formulaire from "./Formulaire.js";
 import ToastErreur from "./ToastErreur.js";
 import ToastSucces from "./ToastSucces.js";
-
+import Router from "./Router.js";
 class Application {
     #conteneurHTML = null;
     #conteneurListePiscinesHTML = null;
@@ -27,6 +27,8 @@ class Application {
         //Initialiser la carte
         this.#map = L.map("map").setView([45.5017, -73.5673], 13);
         this.#markersLayer = L.layerGroup().addTo(this.#map);
+
+        new Router();
 
         this.recupererDonnees();
     }

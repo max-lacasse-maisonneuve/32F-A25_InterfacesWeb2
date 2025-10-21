@@ -9,13 +9,16 @@ class Formulaire {
     #bEstValide = false;
     #donneesFormulaire = {};
     #fichierImage;
+    #visualisateurFichier;
     constructor(application) {
         this.#application = application;
         this.#elementHTML = this.#application.conteneurHTML.querySelector("[data-formulaire]");
         this.#boutonSubmitHTML = this.#elementHTML.querySelector("button[type='submit']");
         this.#boutonResetHTML = this.#elementHTML.querySelector("button[type='reset']");
         this.#champsHTML = this.#elementHTML.querySelectorAll("[name]");
+        this.#visualisateurFichier = this.#elementHTML.querySelector("[data-visualisateur-image]");
 
+        this.#visualisateurFichier.addEventListener("click", this.#onClicVisualisateur.bind(this));
         this.#elementHTML.addEventListener("submit", this.#onSubmitFormulaire.bind(this));
         this.#elementHTML.addEventListener("change", this.#onChangementChamps.bind(this));
         this.#elementHTML.addEventListener("reset", this.#onResetFormulaire.bind(this));
@@ -23,11 +26,17 @@ class Formulaire {
         this.#methode = "POST";
         this.viderFormulaire();
         this.#validerFormulaire();
+        this.chainagePromesses();
     }
 
     //On en profite au passage pour également vider les données
     #onResetFormulaire(evenement) {
         this.viderFormulaire(); //Vide les donnees
+    }
+
+    #onClicVisualisateur() {
+        this.#elementHTML.querySelector("[name='image']").value = "";
+        this.#visualisateurFichier.src = "";
     }
 
     #onSubmitFormulaire(evenement) {
@@ -71,15 +80,56 @@ class Formulaire {
         }
     }
 
-    #onChangementChamps(evenement) {
+    async #onChangementChamps(evenement) {
         // Au changement d'info d'un champs
         const declencheur = evenement.target;
         // Valider les informations du champs et nettoyer
         if (declencheur.closest("[name]")) {
             this.#validerChamp(declencheur);
         }
+
+        if (declencheur.closest("[type='file']")) {
+            const fichier = declencheur.files[0];
+
+            try {
+                const donneesImage = await this.lireFichierImage(fichier);
+                this.#visualisateurFichier.src = donneesImage;
+            } catch (erreur) {
+                //TODO: ajouter un toast en cas d'erreur
+            }
+        }
         // Valider le formulaire
         this.#validerFormulaire();
+    }
+
+    async chainagePromesses() {
+        const donnees = [1, 2, 3, 4, 5];
+        const tableauPromesses = donnees.map(function (element) {
+            return new Promise(function (resolve, reject) {
+                //Implémenter votre logique
+                setTimeout(resolve, 1000);
+            });
+        });
+
+        await Promise.all(tableauPromesses);
+
+        console.log("batch terminée");
+    }
+
+    lireFichierImage(fichier) {
+        return new Promise(function (resolve, reject) {
+            const lecteur = new FileReader();
+
+            lecteur.addEventListener("load", function () {
+                resolve(lecteur.result);
+            });
+
+            lecteur.addEventListener("error", function () {
+                reject(lecteur.error);
+            });
+
+            lecteur.readAsDataURL(fichier);
+        });
     }
 
     remplirFormulaire(donnees) {

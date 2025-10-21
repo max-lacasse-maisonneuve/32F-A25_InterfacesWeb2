@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://localhost:8888/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Requ%C3%AAtes%20asynchrones_fichiers/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="Requ%C3%AAtes%20asynchrones_fichiers/styles.css">
+    <script src="Requ%C3%AAtes%20asynchrones_fichiers/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer="defer"></script>
+    <script type="module" src="Requ%C3%AAtes%20asynchrones_fichiers/index.js"></script>
+    <title>Requêtes asynchrones</title>
+</head>
+
+<body>
+    <header>
+        <h1>Liste des piscines de Montréal</h1>
+    </header>
+    <main data-application="">
+        <form action="" data-formulaire="">
+            <div class="input-group">
+                <label for="nom">Nom de la piscine</label>
+                <input type="text" id="nom" name="nom" required="" maxlength="200" minlength="3">
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
+            </div>
+            <!-- <div class="input-group">
+                <label for="nom">Nom de la piscine</label>
+                <input type="number" id="nom" name="nom" required max="200" min="3" step="0.1" />
+            </div>
+            <div class="input-group">
+                <label for="nom">Nom de la piscine</label>
+                <input type="date" id="nom" name="nom" required min="2025-09-30" max="2025-10-15" />
+            </div> -->
+
+            <div class="input-group">
+                <label for="type_piscine">Type de piscine</label>
+                <select name="type_piscine" id="type_piscine" required="">
+                    <option value="" selected="selected">Sélectionner un type</option>
+                    <option value="Piscine intérieure">Intérieure</option>
+                    <option value="Piscine extérieure">Extérieure</option>
+                    <option value="Jeu d'eau">Jeu d'eau</option>
+                    <option value="Pataugeoire">Pataugeoire</option>
+                </select>
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
+            </div>
+
+            <div class="input-group">
+                <label for="arrondissement">Arrondissement</label>
+                <input type="text" id="arrondissement" name="arrondissement" required="">
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
+            </div>
+
+            <div class="input-group">
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse" name="adresse" required="">
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
+            </div>
+
+            <div class="input-group">
+                <label for="gestion">Gestion</label>
+                <select name="gestion" id="gestion" required="">
+                    <option value="" selected="selected">Sélectionner</option>
+                    <option value="Municipale">Municipale</option>
+                    <option value="Privé">Privé</option>
+                    <option value="OBNL">OBNL</option>
+                    <option value="Parapublique">Parapublique</option>
+                </select>
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
+            </div>
+
+            <div class="input-group">
+                <label for="equipement">Équipement</label>
+                <input type="text" id="equipement" name="equipement" placeholder="Ex: Piscine récréative" required="">
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
+            </div>
+
+            <div class="input-group">
+                <label for="longitude">Longitude</label>
+                <input type="number" step="0.000001" id="longitude" name="longitude" required="">
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
+            </div>
+
+            <div class="input-group">
+                <label for="latitude">Latitude</label>
+                <input type="number" step="0.000001" id="latitude" name="latitude" required="">
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
+            </div>
+
+            <div class="input-group">
+                <img src="" alt="" data-visualisateur-image="">
+                <label for="image">Image</label>
+                <input type="file" id="image" name="image" accept="image/*" data-image="">
+                <p class="message-erreur">Vous devez corriger le champ suivant</p>
+            </div>
+
+            <button type="submit" disabled="disabled">Ajouter la piscine</button>
+            <button type="reset">Réinitialiser le formulaire</button>
+        </form>
+
+        <section class="grille" data-liste-piscine="">
+            <div class="piscine carte" data-id="1" data-longitude="-73.6363900" data-latitude="45.5525260">
+                <h2 data-nom="">Complexe sportif Claude-Robillard</h2>
+                <img src="Requ%C3%AAtes%20asynchrones_fichiers/piscine_placeholder.jpg" alt="Image de la piscine Complexe sportif Claude-Robillard">
+                <p>Type : <span data-type="">Piscine intérieure</span></p>
+                <p>Arrondissement : <span data-arrondissement="">Ahuntsic-Cartierville</span></p>
+                <p>Adresse : <span data-adresse="">1 000, Avenue Émile-Journeault Est</span></p>
+                <p>Gestion : <span data-gestion="">Municipale</span></p>
+                <p>Équipement : <span data-equipement="">Complexe aquatique</span></p>
+              
+                <button class="supprimer" data-action="modifier">Modifier</button>
+                <button class="supprimer" data-action="supprimer">Supprimer</button>
+            </div>
+        
+            <div class="piscine carte" data-id="2" data-longitude="-73.4994100" data-latitude="45.6405210">
+                <h2 data-nom="">Saint-Jean-Baptiste</h2>
+                <img src="Requ%C3%AAtes%20asynchrones_fichiers/piscine_placeholder.jpg" alt="Image de la piscine Saint-Jean-Baptiste">
+                <p>Type : <span data-type="">Pataugeoire</span></p>
+                <p>Arrondissement : <span data-arrondissement="">Rivière-des-Prairies–Pointe-aux-Trembles</span></p>
+                <p>Adresse : <span data-adresse="">1 048, Boulevard Saint-Jean-Baptiste</span></p>
+                <p>Gestion : <span data-gestion="">Municipale</span></p>
+                <p>Équipement : <span data-equipement=""></span></p>
+              
+                <button class="supprimer" data-action="modifier">Modifier</button>
+                <button class="supprimer" data-action="supprimer">Supprimer</button>
+            </div>
+        
+            <div class="piscine carte" data-id="3" data-longitude="-73.5630990" data-latitude="45.4798020">
+                <h2 data-nom="">Centre sportif St-Charles5</h2>
+                <img src="Requ%C3%AAtes%20asynchrones_fichiers/piscine_placeholder.jpg" alt="Image de la piscine Centre sportif St-Charles5">
+                <p>Type : <span data-type="">Piscine intérieure</span></p>
+                <p>Arrondissement : <span data-arrondissement="">Le Sud-Ouest</span></p>
+                <p>Adresse : <span data-adresse="">1 055, Rue Hibernia</span></p>
+                <p>Gestion : <span data-gestion="">Municipale</span></p>
+                <p>Équipement : <span data-equipement="">Piscine récréative</span></p>
+              
+                <button class="supprimer" data-action="modifier">Modifier</button>
+                <button class="supprimer" data-action="supprimer">Supprimer</button>
+            </div>
+        
+            <div class="piscine carte" data-id="4" data-longitude="-73.5786670" data-latitude="45.4525000">
+                <h2 data-nom="">Parc Normand Dawe</h2>
+                <img src="Requ%C3%AAtes%20asynchrones_fichiers/piscine_placeholder.jpg" alt="Image de la piscine Parc Normand Dawe">
+                <p>Type : <span data-type="">Jeu d'eau</span></p>
+                <p>Arrondissement : <span data-arrondissement="">Verdun</span></p>
+                <p>Adresse : <span data-adresse="">1 060, Rue Woodland</span></p>
+                <p>Gestion : <span data-gestion="">Municipale</span></p>
+                <p>Équipement : <span data-equipement="">null</span></p>
+              
+                <button class="supprimer" data-action="modifier">Modifier</button>
+                <button class="supprimer" data-action="supprimer">Supprimer</button>
+            </div>
+        
+            <div class="piscine carte" data-id="5" data-longitude="-73.6774890" data-latitude="45.5196800">
+                <h2 data-nom="">Parc Beaulac</h2>
+                <img src="Requ%C3%AAtes%20asynchrones_fichiers/piscine_placeholder.jpg" alt="Image de la piscine Parc Beaulac">
+                <p>Type : <span data-type="">Jeu d'eau</span></p>
+                <p>Arrondissement : <span data-arrondissement="">Saint-Laurent</span></p>
+                <p>Adresse : <span data-adresse="">1 145, Rue Élizabeth</span></p>
+                <p>Gestion : <span data-gestion="">Municipale</span></p>
+                <p>Équipement : <span data-equipement="">null</span></p>
+              
+                <button class="supprimer" data-action="modifier">Modifier</button>
+                <button class="supprimer" data-action="supprimer">Supprimer</button>
+            </div>
+        </section>
+        <div class="pagination-container" data-pagination=""><div>
+            <button class="precedent" data-direction="precedent" disabled="disabled">Précédent</button>
+            <span> Page <span data-page-courante="">1</span> / <span data-total-page="">8</span>
+            </span>
+            <button class="suivant" data-direction="suivant">Suivant</button>
+        </div></div>
+        <div>
+            <button data-geolocalisation="">Me géolocaliser</button>
+        </div>
+        <div id="map" style="height: 400px; width: 100%; position: relative;" class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 19; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" src="Requ%C3%AAtes%20asynchrones_fichiers/2930_002.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 33px, 0px); opacity: 1;"><img alt="" src="Requ%C3%AAtes%20asynchrones_fichiers/2930_003.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 33px, 0px); opacity: 1;"><img alt="" src="Requ%C3%AAtes%20asynchrones_fichiers/2929_004.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, -223px, 0px); opacity: 1;"><img alt="" src="Requ%C3%AAtes%20asynchrones_fichiers/2929.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, -223px, 0px); opacity: 1;"><img alt="" src="Requ%C3%AAtes%20asynchrones_fichiers/2931.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(251px, 289px, 0px); opacity: 1;"><img alt="" src="Requ%C3%AAtes%20asynchrones_fichiers/2931_002.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(507px, 289px, 0px); opacity: 1;"><img alt="" src="Requ%C3%AAtes%20asynchrones_fichiers/2930_004.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 33px, 0px); opacity: 1;"><img alt="" src="Requ%C3%AAtes%20asynchrones_fichiers/2930.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 33px, 0px); opacity: 1;"><img alt="" src="Requ%C3%AAtes%20asynchrones_fichiers/2929_003.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, -223px, 0px); opacity: 1;"><img alt="" src="Requ%C3%AAtes%20asynchrones_fichiers/2929_002.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, -223px, 0px); opacity: 1;"><img alt="" src="Requ%C3%AAtes%20asynchrones_fichiers/2931_004.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-5px, 289px, 0px); opacity: 1;"><img alt="" src="Requ%C3%AAtes%20asynchrones_fichiers/2931_003.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(763px, 289px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-shadow-pane"><img src="Requ%C3%AAtes%20asynchrones_fichiers/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(88px, -223px, 0px);" alt=""><img src="Requ%C3%AAtes%20asynchrones_fichiers/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(886px, -956px, 0px);" alt=""><img src="Requ%C3%AAtes%20asynchrones_fichiers/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(515px, 382px, 0px);" alt=""><img src="Requ%C3%AAtes%20asynchrones_fichiers/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(424px, 608px, 0px);" alt=""><img src="Requ%C3%AAtes%20asynchrones_fichiers/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(-151px, 50px, 0px);" alt=""></div><div class="leaflet-pane leaflet-marker-pane"><img src="Requ%C3%AAtes%20asynchrones_fichiers/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(88px, -223px, 0px); z-index: -223;" alt="Marker" tabindex="0" role="button"><img src="Requ%C3%AAtes%20asynchrones_fichiers/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(886px, -956px, 0px); z-index: -956;" alt="Marker" tabindex="0" role="button"><img src="Requ%C3%AAtes%20asynchrones_fichiers/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(515px, 382px, 0px); z-index: 382;" alt="Marker" tabindex="0" role="button"><img src="Requ%C3%AAtes%20asynchrones_fichiers/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(424px, 608px, 0px); z-index: 608;" alt="Marker" tabindex="0" role="button"><img src="Requ%C3%AAtes%20asynchrones_fichiers/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(-151px, 50px, 0px); z-index: 50;" alt="Marker" tabindex="0" role="button"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(620015px, 750247px, 0px) scale(4096);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com/" title="A JavaScript library for interactive maps"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" class="leaflet-attribution-flag"><path fill="#4C7BE1" d="M0 0h12v4H0z"></path><path fill="#FFD500" d="M0 4h12v3H0z"></path><path fill="#E0BC00" d="M0 7h12v1H0z"></path></svg> Leaflet</a></div></div></div></div>
+    </main>
+
+
+</body></html>
