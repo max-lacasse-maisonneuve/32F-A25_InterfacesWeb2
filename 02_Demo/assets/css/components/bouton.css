@@ -1,4 +1,5 @@
 .bouton {
+    display: block;
     background-color: tomato;
     color: white;
     border: 2px solid darkred;
