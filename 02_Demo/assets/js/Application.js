@@ -1,19 +1,14 @@
 import Router from "./Router.js";
 import Toast from "./components/Toast.js";
-import Spinner from "./components/Spinner/Spinner.js";
 
 class Application {
     #router;
     #listeServices;
     #conteneurHTML;
-    #spinner;
 
     constructor() {
         this.#conteneurHTML = document.querySelector("[data-application]");
         this.#router = new Router(this);
-        this.#spinner = document.querySelector("loading-spinner");
-        // this.#spinner.hide();
-        console.log(this.#spinner);
     }
 
     get conteneurHTML() {
