@@ -81,6 +81,8 @@ class AccueilView {
             //TODO: Afficher un message d'erreur
         }
     }
+
+    miseAjour(liste) {}
 }
 
 export default AccueilView;

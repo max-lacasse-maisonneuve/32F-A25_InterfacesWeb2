@@ -57,12 +57,11 @@ class Router {
 
         const route = tableau.length > 0 ? tableau[0] : "";
         const parametreDynamique = tableau[1];
-        console.log(route);
 
         let Vue = this.#routes[route];
 
         if (Vue) {
-            this.#vueActuelle = new Vue(this.#application, parametreDynamique);
+            this.#vueActuelle = new Vue(this.#application, parametreDynamique, searchParams);
         } else {
             this.#vueActuelle = new Page404View(this.#application);
         }

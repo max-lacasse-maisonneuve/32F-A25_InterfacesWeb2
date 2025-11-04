@@ -20,3 +20,13 @@
     --couleur-succes: rgb(49, 167, 92);
     --couleur-erreur: rgb(167, 49, 49);
 }
+
+body[data-theme="nuit"] {
+    --couleur-primaire: pink;
+    --couleur-secondaire: #666;
+    --couleur-accent: #0d1d2e;
+    --couleur-favoris: #e7ca4a;
+    --couleur-texte: #fff;
+    --couleur-succes: rgb(49, 167, 92);
+    --couleur-erreur: rgb(167, 49, 49);
+}

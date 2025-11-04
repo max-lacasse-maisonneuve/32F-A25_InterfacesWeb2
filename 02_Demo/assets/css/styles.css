@@ -19,3 +19,8 @@
 
 @import url("./layout/principal.css");
 @import url("./layout/grille.css");
+
+/*Exception*/
+.invisible {
+    display: none !important;
+}
