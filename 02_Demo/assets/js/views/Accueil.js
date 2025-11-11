@@ -1,3 +1,5 @@
+import dompurify from "dompurify";
+
 class Accueil {
     #application;
     #listesTravauxHTML;
@@ -32,12 +34,14 @@ class Accueil {
         reponse.entries.forEach(function (entry) {
             gabarit += `
             <div class="p-5 bg-slate-800 text-white basis-1/3">
-                <h3 class="text-slate-300 font-bold"><i class="fa-solid fa-person-digging mr-4 text-orange-500"></i>${entry.dc_title}</h3>
+                <h3 class="text-slate-300 font-bold"><i class="fa-solid fa-trowel mr-4 text-orange-500"></i>${entry.dc_title}</h3>
             </div>`;
         });
         gabarit += "</div>";
 
-        this.#listesTravauxHTML.insertAdjacentHTML("beforeend", gabarit);
+        const gabaritPropre = dompurify.sanitize(gabarit);
+
+        this.#listesTravauxHTML.insertAdjacentHTML("beforeend", gabaritPropre);
     }
 }
 
