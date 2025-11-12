@@ -18,6 +18,14 @@ class Application {
                 this.#vueActuelle = new Accueil(this);
             }.bind(this)
         );
+        // page(
+        //     "/pizzas/:id",
+        //     function (contexte) {
+        //         console.log(contexte.params.id);
+
+        //         this.#vueActuelle = new Accueil(this);
+        //     }.bind(this)
+        // );
 
         page(
             "/sources",
@@ -38,6 +46,7 @@ class Application {
                 this.#vueActuelle = new Page404(this);
             }.bind(this)
         );
+
         page();
     }
 
