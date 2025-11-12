@@ -33,7 +33,7 @@ class Accueil {
         let gabarit = "<div class='p-5 grid grid-cols-3 gap-3'>";
         reponse.entries.forEach(function (entry) {
             gabarit += `
-            <div class="p-5 bg-slate-800 text-white basis-1/3">
+            <div class="p-5 bg-slate-800 text-white basis-1/3 test opacity-0" >
                 <h3 class="text-slate-300 font-bold"><i class="fa-solid fa-trowel mr-4 text-orange-500"></i>${entry.dc_title}</h3>
             </div>`;
         });

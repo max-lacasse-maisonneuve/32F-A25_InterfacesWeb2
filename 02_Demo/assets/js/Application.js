@@ -2,6 +2,7 @@ import Accueil from "./views/Accueil.js";
 import Donnees from "./views/Donnees.js";
 import Page404 from "./views/Page404.js";
 import page from "page";
+import Three from "./views/Three.js";
 
 class Application {
     #listesTravauxHTML;
@@ -22,6 +23,12 @@ class Application {
             "/sources",
             function () {
                 this.#vueActuelle = new Donnees(this);
+            }.bind(this)
+        );
+        page(
+            "/three",
+            function () {
+                this.#vueActuelle = new Three(this);
             }.bind(this)
         );
 
